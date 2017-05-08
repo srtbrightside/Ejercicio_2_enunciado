@@ -3,13 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Ejercicio Squad</title>
-  </head>
+    <style type="text/css">
+  body {color: black; font-family: Verdana; background-image: url("https://image.freepik.com/foto-gratis/adolescente-estudiante-estudio-del-cuerpo-del-brazo_1301-1902.jpg"); background-position: right; background-repeat: no-repeat; }
+  h1 {color:black; position: absolute;}
+    }
+    </style>
+        </head>
   <body>
       <h1>Mi Squad</h1>
+      <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/1872/Laboratoria_Logo.png">
       <div>
         <p>Compañeras de SQUAD Latin Coders</p>
           <div id='lista'></div>
-    	</div>
+        </div>
+    <div>
+        <textarea id="area1" rows="5">Escribe tu comentario</textarea>
+        <input type="button" value="añadir comentario" onclick="comentario()" />
+        <br />
+        <p id="ask">Escríbele a la Latin Coder!</p>
+    </div>
+
+
       <script src='assets/js/main.js'></script>
   </body>
+
 </html>
