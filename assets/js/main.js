@@ -17,7 +17,7 @@ var vane = new perSquad('Vanessa García', '25', 'Probar cervezas')
 var impre = document.getElementById('lista');
 
 var res1 = "<b><li>Nombre y Apellido: </b>" + espe.nombre + "<br></li><b><li>Edad: </b>" + espe.edad + "<br></li><b><li>Hobbie: </b>" + espe.hobbie
-    + "<br><br>" + "<textarea name='textarea' rows='9' cols='60'>Ingresa tu comentario</textarea>" + "<input type="button" value="añadir comentario" onclick="comentario();
+    + "<br><br>" + "<textarea name='textarea' rows='9' cols='60'>Ingresa tu comentario</textarea>";
     var res2 = "<b><li>Nombre y Apellido: </b>" + cindy.nombre + "<br></li><b><li>Edad: </b>" + cindy.edad + "<br></li><b><li>Hobbie: </b>" + cindy.hobbie
     + "<br><br>";
 var res3 = "<b><li>Nombre y Apellido: </b>" + vale.nombre + "<br></li><b><li>Edad: </b>" + vale.edad + "<br></li><b><li>Hobbie: </b>" + vale.hobbie
@@ -35,11 +35,6 @@ var res8 = "<b><li>Nombre y Apellido: </b>" + vane.nombre + "<br></li><b><li>Eda
 
 var res = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;
 
-function comentario() {
-    var c1 = document.getElementById('area1').value;
-    var d1 = document.getElementById('ask');
-    d1.innerHTML = c1;
-}
 
 
 impre.innerHTML = res;
