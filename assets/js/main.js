@@ -31,10 +31,15 @@ var res6 = "<b><li>Nombre y Apellido: </b>" + vanessa.nombre + "<br></li><b><li>
 var res7 = "<b><li>Nombre y Apellido: </b>" + natalia.nombre + "<br></li><b><li>Edad: </b>" + natalia.edad + "<br></li><b><li>Hobbie: </b>" + natalia.hobbie
     + "<br><br>" + "<textarea name='textarea' rows='9' cols='60'>Ingresa tu comentario</textarea>";
 var res8 = "<b><li>Nombre y Apellido: </b>" + vane.nombre + "<br></li><b><li>Edad: </b>" + vane.edad + "<br></li><b><li>Hobbie: </b>" + vane.hobbie
-    + "<br><br>" + "<textarea name='textarea' rows='9' cols='60'>Ingresa tu comentario</textarea>";
+    + "<br><br>";
 
 var res = res1 + res2 + res3 + res4 + res5 + res6 + res7 + res8;
 
+function comentario() {
+    var c1 = document.getElementById('area1').value;
+    var d1 = document.getElementById('ask');
+    d1.innerHTML = c1;
+}
 
 
 impre.innerHTML = res;
